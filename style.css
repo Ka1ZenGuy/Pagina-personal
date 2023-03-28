@@ -1,0 +1,93 @@
+.encabezado {
+    background-color: black;
+    color: white;
+  }
+  
+  .imagen-bienvenida {
+    position: relative;
+    height: 300px;
+  }
+  
+  .imagen-bienvenida img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+  }
+  
+  .texto-bienvenida {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+nav {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor {
+    width: 100%;
+    max-width: 1200px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .enlaces {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .enlaces li {
+    margin: 0 10px;
+  }
+  
+  .enlaces a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .enlaces a:hover {
+    color: gray;
+    background-color: white;
+    transform: scale(1.6);
+  }
+  
+  .enlaces li:first-child a {
+    margin-left: 0;
+  }
+  
+  .enlaces li:last-child a {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
