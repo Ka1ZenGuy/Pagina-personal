@@ -1,3 +1,8 @@
+body {
+  background-color: #222222;
+}
+
+
 .encabezado {
     background-color: black;
     color: white;
@@ -33,6 +38,7 @@ nav {
     align-items: center;
   }
   
+  
   .contenedor {
     width: 100%;
     max-width: 1200px;
@@ -51,17 +57,19 @@ nav {
   
   .enlaces {
     list-style: none;
-    display: flex;
+    display: center;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
     margin: 0;
     padding: 0;
     flex-grow: 1;
-    text-align: center;
+    text-align: center; /* Agregado para centrar el texto */
   }
   
   .enlaces li {
-    margin: 0 10px;
+    margin: 10 10px;
+    display: inline-block;
   }
   
   .enlaces a {
@@ -73,8 +81,9 @@ nav {
     transition: all 0.2s ease;
     padding: 10px;
     border-radius: 5px;
-    text-align: center;
+    text-align: center; /* Agregado para centrar el texto */
   }
+  
   
   .enlaces a:hover {
     color: gray;
@@ -89,5 +98,37 @@ nav {
   .enlaces li:last-child a {
     margin-right: 0;
     margin-left: auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  section {
+    background-color: #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  section p {
+    margin-top: 0;
+    margin-left: 60px;
+    margin-bottom: 0;
+    font-size: 18px;
   }
   
